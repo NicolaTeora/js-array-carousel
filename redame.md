@@ -28,3 +28,6 @@ Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 ## Svolgimento:
 - Creare prima il layout del carosello in HTML e CSS;
     - Container, anteprima immagine, frecce di selezione.
+
+- tramite javascript:
+    - prendo ogni elemento dell'Array e lo carico dinamicamente
