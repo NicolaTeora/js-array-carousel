@@ -1,0 +1,37 @@
+.debug{
+    border: 1px red dashed;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_gallery{
+    width: 992px;
+    height: 768px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.img_up,
+.img_down{
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+    left: 50%;
+}
+
+.img_up{
+    top: 10px;
+}
+
+.img_down{
+    bottom: 10px;
+}
