@@ -39,7 +39,6 @@ goDown.addEventListener('click', function(){
     nextImg.classList.add('visible');   
 })
 
-//slideMoment = galleySlide.lenght
 goUp.addEventListener('click', function() {
     //recupero
     const imgsTotal = document.getElementsByClassName('slide');
@@ -47,8 +46,8 @@ goUp.addEventListener('click', function() {
     const imgOld = imgsTotal[slideMoment];
     imgOld.classList.remove('visible');
     //decremento o riparto dal fondo
-    if () {
-        
+    if (slideMoment <= 0) {
+        slideMoment = imgsTotal.length -1;
     } else {
         slideMoment--;
     }
