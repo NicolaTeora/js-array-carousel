@@ -21,9 +21,38 @@ for (let i = 0; i < gallerySlide.length; i++) {
 
 imgGallerySlide.innerHTML = imgHTML;
 
-goUp.addEventListener('click', function(){
-    const imgCurrent = document.querySelector('.slide.visible');
-    imgCurrent.classList.remove('visible');
+slideMoment = 0;
+goDown.addEventListener('click', function(){
+    //recupero
+    const imgsTotal = document.getElementsByClassName('slide');
+    //rimuovo classe visible
+    const imgOld = imgsTotal[slideMoment];
+    imgOld.classList.remove('visible');
+    //incremento o riazzero
+    if (slideMoment >= imgsTotal.length -1) {
+        slideMoment = 0;
+    } else {
+        slideMoment++;
+    }
+    //assegno classe visible
+    const nextImg = imgsTotal[slideMoment];
+    nextImg.classList.add('visible');   
+})
 
-    
+//slideMoment = galleySlide.lenght
+goUp.addEventListener('click', function() {
+    //recupero
+    const imgsTotal = document.getElementsByClassName('slide');
+    //rimuovo classe visible
+    const imgOld = imgsTotal[slideMoment];
+    imgOld.classList.remove('visible');
+    //decremento o riparto dal fondo
+    if () {
+        
+    } else {
+        slideMoment--;
+    }
+    //assegno classe visible
+    const nextImg = imgsTotal[slideMoment];
+    nextImg.classList.add('visible');
 })
