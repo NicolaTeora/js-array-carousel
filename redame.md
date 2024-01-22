@@ -31,3 +31,5 @@ Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 
 - tramite javascript:
     - prendo ogni elemento dell'Array e lo carico dinamicamente
+
+- tramite gestione del click delle frecce scorro le varie immagini caricate per il carosello

@@ -8,7 +8,6 @@ let imgHTML = '';
 for (let i = 0; i < gallerySlide.length; i++) {
     
     const imgGallery = gallerySlide[i];
-    //console.log(imgGallery)
     let visibleElement ='';
     if (i == 0) {
         visibleElement = 'visible'
@@ -55,3 +54,7 @@ goUp.addEventListener('click', function() {
     const nextImg = imgsTotal[slideMoment];
     nextImg.classList.add('visible');
 })
+
+setInterval(function(){
+    goDown.click()
+},3000)
