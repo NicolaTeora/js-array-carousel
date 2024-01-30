@@ -22,6 +22,7 @@ imgGallerySlide.innerHTML = imgHTML;
 
 slideMoment = 0;
 goDown.addEventListener('click', function(){
+
     //recupero
     const imgsTotal = document.getElementsByClassName('slide');
     //rimuovo classe visible
@@ -35,7 +36,8 @@ goDown.addEventListener('click', function(){
     }
     //assegno classe visible
     const nextImg = imgsTotal[slideMoment];
-    nextImg.classList.add('visible');   
+    nextImg.classList.add('visible');
+  
 })
 
 goUp.addEventListener('click', function() {
@@ -55,6 +57,11 @@ goUp.addEventListener('click', function() {
     nextImg.classList.add('visible');
 })
 
+//setInterval su bottone
 setInterval(function(){
-    goDown.click()
-},3000)
+    goUp.click()
+},3000);
+
+imgGallerySlide.addEventListener('mouseover', function(){
+    console.log('mouse intercettato');
+})
